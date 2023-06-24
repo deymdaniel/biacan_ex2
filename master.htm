@@ -1,45 +1,172 @@
-<!DOCTYPE html
-   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html>
-<head>
-<title>Master Bedroom</title>
-</head>
-<body link="navy" alink="navy" vlink="navy">
+  <head>
+    <title>Master Bedroom</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-<table>
-<tr>
+       {
+        border: 1px solid;
+      }
+      body {
+        margin: 0;
+        background-color: #f1f2eb;
+        font-family: Roboto, sans-serif;
+        color: #221d23;
+      }
+      .nav-bar {
+        color: #f1f2eb;
+        display: flex;
+        align-items: center;
+        padding: 12px 50px;
+        margin: 0;
+        justify-content: space-between;
+        font-weight: 900;
+        font-size: 24px;
+        background-color: #221d23;
+      }
+      ul {
+        display: flex;
+        gap: 16px;
+        list-style: none;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+      }
+      .nav-bar a {
+        text-decoration: none;
+        color: #f1f2eb;
+      }
 
-<td valign="top">
-<b><font size="+3" face="BAZOOKA" color="navy">Home Tour
-<br />Master Bedroom</font></b>
-<br clear="left" />
-<p>The spacious and comfortable master bedroom is bordered by a large picture 
-window and French doors to the outside patio. The windows provide a lovely view 
-of the backyard hot tub area. A large master bath with a Roman tub, 
-shower, and walk-in closet is attached.</p>
+      .info {
+        display: flex;
+        padding: 100px 200px;
+        gap: 50px;
+        line-height: 1.5;
+        align-items: center;
+      }
+      .info-text {
+        font-size: 64px;
+        font-weight: 900;
+      }
+      .info-text p {
+        font-size: 16px;
+        font-weight: 100;
+      }
 
-<p>Call us at 1-555-NEW-HOME or e-mail us at <a href="mailto:hometour@isp.com">
-hometour@isp.com</a> for more information or to schedule a showing.</p>
-</td>
+      .footer {
+        display: flex;
+        padding: 50px 400px;
+        position: fixed;
+        bottom: 0;
+        gap: 50px;
+        align-items: center;
+        font-size: 12px;
+      }
 
-<td>
-<img src="master.jpg" hspace="20" border="0" align="right" alt="Master Bedroom" 
-height="360" width="480" />
-</td>
-</tr>
+      .right a {
+        width: 500px;
+        text-decoration: none;
+        color: #221d23;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body link="navy" alink="navy" vlink="navy">
+    <div class="nav-bar">
+      REAL LIVING
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="page2.html">Project</a></li>
+        <li><a href="page3.html">Form</a></li>
+      </ul>
+    </div>
+    <div class="info">
+      <img src="./pictures/master.jpg" alt="" />
+      <div class="info-text">
+        Master Bedroom
+        <p>
+          The spacious and comfortable master bedroom is bordered by a large
+          picture window and French doors to the outside patio. The windows
+          provide a lovely view of the backyard hot tub area. A large master
+          bath with a Roman tub, shower, and walk-in closet is attached.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left">
+        Call us at 1-555-NEW-HOME or e-mail us at
+        <a href="mailto:hometour@isp.com"> hometour@isp.com</a> for more
+        information or to schedule a showing.
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="/living.htm">Living</a></li>
+          <li><a href="/dining.htm">Dining</a></li>
+          <li><a href="/library.htm">Library</a></li>
+          <li><a href="/master.htm">Master</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <!--
+  <body link="navy" alink="navy" vlink="navy">
+    <div class="nav-bar">
+      REAL LIVING
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="page2.html">Project</a></li>
+        <li><a href="page3.html">Form</a></li>
+      </ul>
+    </div>
 
-<tr>
-<td><br /></td>
-<td align="center"><a href="hometour.htm">Home</a> | 
-<a href="kitchen.htm">Kitchen</a> | 
-<a href="living.htm">Living</a> |
-<a href="dining.htm">Dining</a> |
-<a href="library.htm">Library</a> |
-<a href="master.htm">Master</a> 
-</td>
-</tr>
-</table>
-</body>
+    <table>
+      <tr>
+        <td valign="top">
+          <b
+            ><font size="+3" face="BAZOOKA" color="navy"
+              >Home Tour <br />Master Bedroom</font
+            ></b
+          >
+          <br clear="left" />
+          <p>
+            The spacious and comfortable master bedroom is bordered by a large
+            picture window and French doors to the outside patio. The windows
+            provide a lovely view of the backyard hot tub area. A large master
+            bath with a Roman tub, shower, and walk-in closet is attached.
+          </p>
+
+          <p>
+            Call us at 1-555-NEW-HOME or e-mail us at
+            <a href="mailto:hometour@isp.com"> hometour@isp.com</a> for more
+            information or to schedule a showing.
+          </p>
+        </td>
+
+        <td>
+          <img
+            src="master.jpg"
+            hspace="20"
+            border="0"
+            align="right"
+            alt="Master Bedroom"
+            height="360"
+            width="480"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td><br /></td>
+        <td align="center">
+          <a href="hometour.htm">Home</a> | <a href="kitchen.htm">Kitchen</a> |
+          <a href="living.htm">Living</a> | <a href="dining.htm">Dining</a> |
+          <a href="library.htm">Library</a> |
+          <a href="master.htm">Master</a>
+        </td>
+      </tr>
+    </table>
+    -->
 </html>
