@@ -1,109 +1,166 @@
-<!DOCTYPE>
-<html>
-<head>
-<title>  </title>
-</head>
-<body style=background-image:url("wall.jpg")>
-<a id="top"></a>
-<header>
-<h1>CHUVA REAL ESTATE WEBSITE</h1>
-</header>
-<nav>
-ABOUT US
-SERVICES
-GALLERY
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>REAL LIVING Real Estate</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-</nav>
-<section>
-SERVICES
-<br />
-<br />
-<br />
-<hr />
-<h3>REGISTRATION FORM</h3>
-<hr />
-<br />
-<br />
-<form method="post" action="mailto:ebblancaflor@mapua.edu.ph" autocomplete="on">
-<br />
-<br />
-<fieldset><legend align=right>Log in Info</legend>
-<br />
-Username/Email:<input type="email" name="username" size=15  maxlength=20>
-<br />
-<br />
-Password:<input type=password name="password" size=15  maxlength=20>
-<br />
-</fieldset>
-<br />
-<br />
-Name: <input type=text name="pangalan" size=15  maxlength=20>
-<br />
-<br />
-Age: <input type=text name="pangalan" size=2  maxlength=3>
-<br />
-<br />
-Sex: <input type="radio" name="gender" value="lalake">Male
-     <input type="radio" name="gender" value="babae">Female
-<br />
-<br />
-Choose house type you like:
-<br />
-<input type="checkbox" name="bahay" value="bungalow">Bungalow
-<input type="checkbox" name="bahay" value="condo">Condo
-<input type="checkbox" name="bahay" value="mansion">Mansion
-<input type="checkbox" name="bahay" value="palace">Palace
-<input type="checkbox" name="bahay" value="townhouse">Townhouse
-<br />
-<br />
- Birthday:  <input type=date name="bday">
- <br />
-<br />
-Birthday:
-<select id="day">
-<option> 1  </option>
-<option> 2  </option>
-<option> 3  </option>
-</select id="month">
-<select>
-<option> JAN  </option>
-<option> FEB</option>
-<option> MAR</option>
-</select>
-<select id="year">
-<option> 2000  </option>
-<option> 1999  </option>
-<option> 1998 </option>
-</select>
-<br />
-<br />
-Any suggestions:
-<br />
-<textarea rows=20   cols=100 id="suggest">  </textarea>
-<br />
-<br />
-<input type=submit value=submit>
-<input type=reset value=reset>
+       {
+        border: 1px solid;
+      }
+      body {
+        margin: 0;
+        background-color: #f1f2eb;
+        font-family: Roboto, sans-serif;
+        color: #221d23;
+      }
+      .nav-bar {
+        color: #f1f2eb;
+        display: flex;
+        align-items: center;
+        padding: 12px 50px;
+        margin: 0;
+        justify-content: space-between;
+        font-weight: 900;
+        font-size: 24px;
+        background-color: #221d23;
+      }
+      ul {
+        display: flex;
+        gap: 16px;
+        list-style: none;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+      }
+      .nav-bar a {
+        text-decoration: none;
+        color: #f1f2eb;
+      }
+      .content {
+        padding: 100px 400px;
+        background-color: #221d23;
+        color: #f1f2eb;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+      }
 
+      .content-heading {
+        font-weight: 900;
+        font-size: 48px;
+      }
+      .content-heading .content-text {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 20px;
+      }
+      .footer {
+        color: #221d23;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 400px;
+      }
 
-
-
-
-
-
-</form>
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<a href="#top">Back to top</a>
-</section>
-<footer>
-<hr />
-@Copyright 2020
-</footer>
-
-</body>
+      .footer a {
+        text-decoration: none;
+        color: #221d23;
+      }
+      .description {
+        display: flex;
+        gap: 50px;
+        padding: 50px 200px;
+      }
+      .description h1 {
+        font-weight: bolder;
+        font-size: 64px;
+      }
+      .description p {
+        word-wrap: break-word;
+        text-indent: 36px;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      REAL LIVING
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="page2.html">Project</a></li>
+        <li><a href="page3.html">Form</a></li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>Modern House</h1>
+      <p>
+        A contemporary residential building that adheres to the fundamentals of
+        modern architecture and design is known as a modern house. It often has
+        simple, utilitarian design with smooth lines as well as a minimalist
+        look. Open floor layouts, huge windows, and an abundance of natural
+        light are frequently used in modern homes to create a roomy, airy feel.
+        To create a neat and beautiful appearance, they may also use a variety
+        of materials like glass, steel, concrete, and untreated wood. Modern
+        home designs generally contain features like solar panels, effective
+        insulation, and smart home technologies since energy efficiency and
+        sustainability are significant factors. Modern homes offer a pleasant
+        and eye-catching living environment for modern living by fusing
+        aesthetic, functionality, and environmental conscience.
+      </p>
+    </div>
+    <div class="content">
+      <div class="floorplan">
+        <img src="./pictures/floorplan.gif" usemap="#image_map" />
+        <map name="image_map">
+          <area
+            alt="Dining Room"
+            title="Dining Room"
+            href="./dining.htm"
+            coords="6,8,73,161"
+            shape="rect"
+          />
+          <area
+            alt="Living Room"
+            title="Living Room"
+            href="./living.htm"
+            coords="79,8,170,162"
+            shape="rect"
+          />
+          <area
+            alt="Master Bedroom"
+            title="Master Bedroom"
+            href="./master.htm"
+            coords="176,8,261,129"
+            shape="rect"
+          />
+          <area
+            alt="Library"
+            title="Library"
+            href="./library.htm"
+            coords="138,190,201,265"
+            shape="rect"
+          />
+        </map>
+      </div>
+      <div class="content-heading">
+        FLOOR PLAN
+        <div class="content-text">
+          This is the floor plan of the current project. click on each room in
+          the image to learn more about them.
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left">© 2023 REAL LIVING</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="page2.html">Project</a></li>
+          <li><a href="page3.html">Form</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
