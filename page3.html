@@ -1,109 +1,184 @@
-<!DOCTYPE>
-<html>
-<head>
-<title>  </title>
-</head>
-<body style=background-image:url("wall.jpg")>
-<a id="top"></a>
-<header>
-<h1>CHUVA REAL ESTATE WEBSITE</h1>
-</header>
-<nav>
-ABOUT US
-SERVICES
-GALLERY
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-</nav>
-<section>
-SERVICES
-<br />
-<br />
-<br />
-<hr />
-<h3>REGISTRATION FORM</h3>
-<hr />
-<br />
-<br />
-<form method="post" action="mailto:ebblancaflor@mapua.edu.ph" autocomplete="on">
-<br />
-<br />
-<fieldset><legend align=right>Log in Info</legend>
-<br />
-Username/Email:<input type="email" name="username" size=15  maxlength=20>
-<br />
-<br />
-Password:<input type=password name="password" size=15  maxlength=20>
-<br />
-</fieldset>
-<br />
-<br />
-Name: <input type=text name="pangalan" size=15  maxlength=20>
-<br />
-<br />
-Age: <input type=text name="pangalan" size=2  maxlength=3>
-<br />
-<br />
-Sex: <input type="radio" name="gender" value="lalake">Male
-     <input type="radio" name="gender" value="babae">Female
-<br />
-<br />
-Choose house type you like:
-<br />
-<input type="checkbox" name="bahay" value="bungalow">Bungalow
-<input type="checkbox" name="bahay" value="condo">Condo
-<input type="checkbox" name="bahay" value="mansion">Mansion
-<input type="checkbox" name="bahay" value="palace">Palace
-<input type="checkbox" name="bahay" value="townhouse">Townhouse
-<br />
-<br />
- Birthday:  <input type=date name="bday">
- <br />
-<br />
-Birthday:
-<select id="day">
-<option> 1  </option>
-<option> 2  </option>
-<option> 3  </option>
-</select id="month">
-<select>
-<option> JAN  </option>
-<option> FEB</option>
-<option> MAR</option>
-</select>
-<select id="year">
-<option> 2000  </option>
-<option> 1999  </option>
-<option> 1998 </option>
-</select>
-<br />
-<br />
-Any suggestions:
-<br />
-<textarea rows=20   cols=100 id="suggest">  </textarea>
-<br />
-<br />
-<input type=submit value=submit>
-<input type=reset value=reset>
+       {
+        border: 1px solid;
+      }
+      body {
+        margin: 0;
+        background-color: #f1f2eb;
+        font-family: Roboto, sans-serif;
+        color: #221d23;
+      }
+      .nav-bar {
+        color: #f1f2eb;
+        display: flex;
+        align-items: center;
+        padding: 12px 50px;
+        margin: 0;
+        justify-content: space-between;
+        font-weight: 900;
+        font-size: 24px;
+        background-color: #221d23;
+      }
+      .nav-bar ul {
+        display: flex;
+        gap: 16px;
+        list-style: none;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+      }
+      .nav-bar a {
+        text-decoration: none;
+        color: #f1f2eb;
+      }
 
+      .reg-container {
+        display: flex;
+        padding: 100px 200px;
+        gap: 50px;
+      }
+      .reg-heading {
+        font-size: 64px;
+        font-weight: 900;
+        width: min-content;
+      }
+      .reg-form {
+        width: 100%;
+        padding: 12px;
+      }
 
+      .info ul {
+        list-style: none;
+        line-height: 2.5;
+        font-weight: 900;
+      }
 
+      input {
+        background-color: #f1f2eb;
+        border-radius: 25px;
+        border: 2px solid #221d23;
+        padding: 2px;
+        align-items: center;
+        margin: 0;
+      }
 
+      .text-area textarea {
+        width: 50%;
+      }
+      .text-area {
+        display: flex;
+        flex: 1;
+        gap: 16px;
+        padding: 24px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      REAL LIVING
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="page2.html">Project</a></li>
+        <li><a href="page3.html">Form</a></li>
+      </ul>
+    </div>
+    <div class="reg-container">
+      <div class="reg-form">
+        <div class="info">
+          <ul>
+            <fieldset>
+              <legend>Name</legend>
+              <li>First Name <input type="text" /></li>
+              <li>Middle Name <input type="text" /></li>
+              <li>Last Name <input type="text" /></li>
+            </fieldset>
+            <fieldset>
+              <legend>Age</legend>
+              <li>Age <input type="number" /></li>
+              <li>Birthday <input type="date" /></li>
+              <li>
+                Confirm Birthday
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <select>
+                  <option>JAN</option>
+                  <option>FEB</option>
+                  <option>MAR</option>
+                  <option>APR</option>
+                </select>
+                <select>
+                  <option>2000</option>
+                  <option>2005</option>
+                  <option>2010</option>
+                  <option>2015</option>
+                </select>
+              </li>
+            </fieldset>
+            <fieldset>
+              <legend>Location</legend>
+              <li>Province <input type="text" /></li>
+              <li>City <input type="text" /></li>
+              <li>Street <input type="text" /></li>
+              <li>Zip Code <input type="text" /></li>
+            </fieldset>
+            <fieldset>
+              <legend>Account</legend>
+              <li>Username <input type="text" /></li>
+              <li>Email <input type="email" /></li>
+              <li>Password <input type="text" /></li>
+              <li>Repeat Password <input type="text" /></li>
+            </fieldset>
+          </ul>
+          <ul>
+            <fieldset>
+              <legend>Other</legend>
+              <li>Sex</li>
+              <li>
+                <input type="radio" />Male <input type="radio" />Female
+                <input type="radio" />Transgender
+                <input type="radio" />Non-Binary <input type="radio" />Prefere
+                not to say
+              </li>
+              <li>House Type</li>
+              <li>
+                <input type="checkbox" />Bungalow <input type="checkbox" />Condo
+                <input type="checkbox" />Mansion <input type="checkbox" />Palace
+                <input type="checkbox" />Townhouse
+              </li>
+              <li>
+                House Type <input list="house" />
+                <datalist id="house">
+                  <option value="Modern"></option>
+                  <option value="Tradtional"></option>
+                  <option value="Other"></option>
+                </datalist>
+              </li>
 
-
-
-</form>
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<a href="#top">Back to top</a>
-</section>
-<footer>
-<hr />
-@Copyright 2020
-</footer>
-
-</body>
+              <li>Search <input type="search" name="" id="" /></li>
+            </fieldset>
+            <div class="text-area">
+              <textarea name="" id="" cols="30" rows="10">Suggestions</textarea>
+              <textarea name="" id="" cols="30" rows="10">Feedback</textarea>
+              <textarea name="" id="" cols="30" rows="10">Complaints</textarea>
+              <textarea name="" id="" cols="30" rows="10">Questions</textarea>
+            </div>
+            <button>Submit</button>
+            <button>Reset</button>
+          </ul>
+        </div>
+      </div>
+      <div class="reg-heading">REGISTRATION FORM</div>
+    </div>
+  </body>
 </html>
